@@ -1,0 +1,31 @@
+body{
+  background-color: black;
+  color: white;
+}
+
+.square {
+  background-image: url(derek.jpeg);
+  height: 6em;
+  width: 6em;
+}
+
+.green {
+  border: 2px solid salmon;
+}
+.warp {
+  -webkit-animation-duration: 10s;
+  -webkit-animation-name: slidein;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 2);
+}
+@-webkit-keyframes slidein {
+  0% {
+    -webkit-transform: translateX(100em );
+  }
+  10%{
+    -webkit-transform: translateX(-10em);
+  }
+  100% {
+     -webkit-transform: translatey(10em);
+  }
+}
